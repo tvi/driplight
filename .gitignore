@@ -6,3 +6,14 @@
 *.ear
 
 *~
+
+logs
+project/project
+project/target
+target
+tmp
+
+.classpath
+.project
+.settings/
+.target/
