@@ -1,14 +1,16 @@
 package models;
+import models.*;
 
-import java.util;
+import java.util.*;
+import javax.persistence.*;
+ 
+import play.db.jpa.*;
 
 @Entity
-
-public class Assignement extends Models {
-	@OneToOne
+public class Assignement extends Model {
 	User author;
 	@ManyToMany
-	list<User> SignedUpUsers;
+	List<User> SignedUpUsers;
 	public String year;
 	public String subject;
 	public String taskName;

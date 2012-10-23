@@ -7,9 +7,8 @@ import play.db.jpa.*;
  
 @Entity
 public class User extends Model {
-	
-	@Required 
-	public String email;
+ 
+    public String email;
     public String password;
     public String fullname;
     public boolean isAdmin;
@@ -19,6 +18,5 @@ public class User extends Model {
         this.password = password;
         this.fullname = fullname;
     }
-
  
 }
