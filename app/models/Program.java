@@ -1,16 +1,22 @@
-//package models;
-//import models.*;
-//
-//import java.util.*;
-//import javax.persistence.*;
-// 
-//import play.db.jpa.*;
-//
-//@Entity
-//class Program extends Submission {
-//	public String FileName;
-//	
-//	public Program(String Filename) {
-//		this.FileName = Filename;
-//	}
-//}
+package models;
+ 
+import java.util.*;
+import javax.persistence.*;
+ 
+import play.db.jpa.*;
+ 
+@Entity
+public class Program extends Model {
+ 
+    public String email;
+    public String password;
+    public String fullname;
+    public boolean isAdmin;
+    public User owner;
+    
+    
+    public Program() {
+        
+    }
+ 
+}

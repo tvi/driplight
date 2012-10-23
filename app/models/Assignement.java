@@ -7,9 +7,9 @@ import play.db.jpa.*;
 
 @Entity
 public class Assignement extends Model {
-	User author;
+	public User author;
 	@ManyToMany
-	List<User> SignedUpUsers;
+	public List<User> SignedUpUsers;
 	public String year;
 	public String subject;
 	public String taskName;
