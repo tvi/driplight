@@ -1,16 +1,14 @@
 package controllers;
 
-import play.*;
+import models.*;
 import play.mvc.*;
 
-import java.util.*;
-
-import models.*;
-
+@With(Secure.class)
 public class Application extends Controller {
 
-    public static void index() {
-        render();
+    public static void index(String email, String password) {
+        System.out.println(password);
+    	render();
     }
     
     public static void me() {
